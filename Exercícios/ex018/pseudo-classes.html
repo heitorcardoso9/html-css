@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-Classes</title>
+    <style>
+        div {
+            display: inline-block;
+            background-color: lightblue;
+            border: 1px solid black;
+            text-align: center;
+            height: 50px;
+            width: 200px;
+        }
+        div:hover {
+            background-color: yellow;
+        }
+        div > p {
+            display: none;
+        }
+        .oculto:hover {
+            color: red;
+        }
+        .oculto:hover > p {
+            display: block;
+        }
+
+    </style>
+</head>
+<body>
+    <div>01</div>
+    <div>02</div>
+    <div>03</div>
+    <h1>Exemplo de Hover</h1>
+    <p>Passe o mouse no texto abaixo</p>
+    <div class="oculto">
+        Passe o mouse aqui!
+        <p>TEXTO OCULTO</p>
+    </div>
+</body>
+</html>

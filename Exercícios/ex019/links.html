@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links com Estilo</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px;
+        }
+        a {
+            color: red;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        a:visited {
+            color: rgb(150, 43, 43)
+        }
+        a:hover {
+            text-decoration: underline;
+            color: black;
+        }
+        a:active {
+            color: rgb(28, 173, 57);
+        }
+        a::after {
+            content: '\002764';
+        }
+    </style>
+</head>
+<body>
+    <a href="https://youtube.com" target="_blank">Link para o YouTube</a>
+</body>
+</html>
